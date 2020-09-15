@@ -1,0 +1,18 @@
+{
+    "name": "guilherme/task_manager",
+    "description": "gerenciador de tarefas e task para mim mesmo",
+    "require": {
+        "elevenstack/expressphp": "^2.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Guilherme-j10",
+            "email": "guilhermeZA.123123@gmail.com"
+        }
+    ]
+}

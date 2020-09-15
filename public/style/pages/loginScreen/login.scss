@@ -1,0 +1,97 @@
+.LoginScreen{
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ebebeb;
+
+    .box_login{
+        width: 30%;
+        padding: 12px;
+        background-color: #fff;
+        box-shadow: 0px 0px 20px 1px #1111111f;
+        border-radius: 5px;
+
+        .header{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            span{
+                background-color: #1f88ce;
+                width: 50px;
+                height: 50px;
+                margin-bottom: 10px;
+                display: flex;
+                color: #fff;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+            }
+
+            h3{
+                color: #999;
+                font-weight: 700;
+            }
+        }
+
+        form{
+            padding: 20px;
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .line_input{
+                width: 100%;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon{
+                    width: 45px;
+                    background-color: #1f88ce;
+                    color: #fff;
+                    border-radius: 5px 0px 0px 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .icon, input{
+                    padding: 6px;
+                    height: 40px;
+                }
+
+                input{
+                    width: 100%;
+                    background-color: #fff;
+                    border-radius: 0px 5px 5px 0px;
+                    border: solid 1px #1f88ce;
+                }
+            }
+
+            input[type=submit]{
+                background-color: #1f88ce;
+                color: #fff;
+                padding: 6px 24px;
+                margin-top: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    small{
+        margin-top: 15px;
+        font-size: 13px;
+        color: #999;
+    }
+}

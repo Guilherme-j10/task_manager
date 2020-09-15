@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-weight: normal;
+  box-sizing: border-box;
+  outline: none; }
+  * body img {
+    max-width: 100%; }
+  * ::-webkit-scrollbar {
+    width: 0px; }
+
+.box_deash {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 360px 3fr; }
+  .box_deash .left_side_options {
+    height: 100vh;
+    background-color: #fff;
+    border-right: solid 1px #e4e3e3;
+    overflow-y: scroll; }
+    .box_deash .left_side_options .header {
+      width: 100%;
+      text-align: center;
+      background-color: #fff;
+      display: flex;
+      height: 70px;
+      position: sticky;
+      justify-content: center;
+      z-index: 3;
+      top: 0;
+      align-items: center;
+      border-bottom: solid 1px #e4e3e3; }
+      .box_deash .left_side_options .header h1 {
+        font-size: 1.1em;
+        color: #9aa7af;
+        font-weight: 600; }
+    .box_deash .left_side_options .user_information {
+      width: 100%;
+      padding: 40px 0px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: solid 1px #e4e3e3; }
+      .box_deash .left_side_options .user_information .profile_container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 30px; }
+        .box_deash .left_side_options .user_information .profile_container span {
+          width: 70px;
+          height: 70px;
+          border-radius: 50px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          margin-bottom: 10px; }
+        .box_deash .left_side_options .user_information .profile_container p {
+          margin: 5px 0px;
+          font-weight: 500;
+          color: #222; }
+        .box_deash .left_side_options .user_information .profile_container small {
+          color: #999;
+          font-weight: 600; }
+      .box_deash .left_side_options .user_information .optins_plus {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .box_deash .left_side_options .user_information .optins_plus li a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          margin: 0px 10px;
+          background-color: #eaeefc; }
+      .box_deash .left_side_options .user_information .overview {
+        width: 100%;
+        padding: 0px 35px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column; }
+        .box_deash .left_side_options .user_information .overview small {
+          width: 100%;
+          color: #9aa7af;
+          font-weight: 500;
+          text-align: right;
+          margin-bottom: 5px; }
+        .box_deash .left_side_options .user_information .overview .progress_bar {
+          width: 100%;
+          height: 7px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          border-radius: 50px;
+          background-color: #ccc; }
+          .box_deash .left_side_options .user_information .overview .progress_bar .intern {
+            height: 7px;
+            border-radius: 50px; }
+        .box_deash .left_side_options .user_information .overview .over_container {
+          width: 100%;
+          display: flex;
+          margin-top: 10px;
+          justify-content: space-between;
+          align-items: center; }
+          .box_deash .left_side_options .user_information .overview .over_container li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; }
+            .box_deash .left_side_options .user_information .overview .over_container li h3, .box_deash .left_side_options .user_information .overview .over_container li p, .box_deash .left_side_options .user_information .overview .over_container li small {
+              text-align: center; }
+            .box_deash .left_side_options .user_information .overview .over_container li h3 {
+              color: #222;
+              font-weight: 600; }
+            .box_deash .left_side_options .user_information .overview .over_container li p {
+              font-size: 14px;
+              color: #79838a;
+              margin-top: 3px;
+              font-weight: 500; }
+            .box_deash .left_side_options .user_information .overview .over_container li small {
+              font-size: 12px;
+              color: #a8a7a7;
+              font-weight: 500; }
+    .box_deash .left_side_options .projects {
+      width: 100%;
+      padding: 30px 35px; }
+      .box_deash .left_side_options .projects .header_pro {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 15px; }
+        .box_deash .left_side_options .projects .header_pro h3 {
+          color: #222;
+          font-weight: 600; }
+      .box_deash .left_side_options .projects ul {
+        width: 100%; }
+        .box_deash .left_side_options .projects ul li a {
+          display: block;
+          color: #9aa7af;
+          margin-bottom: 10px;
+          font-weight: 600; }
+          .box_deash .left_side_options .projects ul li a i {
+            color: #2f7add;
+            margin-right: 10px; }
+  .box_deash .right_side_infos {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 70px 1fr; }
+    .box_deash .right_side_infos .header {
+      width: 100%;
+      padding: 0px 35px;
+      border-bottom: solid 1px #e4e3e3;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center; }
+      .box_deash .right_side_infos .header form label {
+        color: #79838a;
+        margin-right: 10px; }
+      .box_deash .right_side_infos .header form input[type=text] {
+        font-size: 1.1em;
+        color: #222;
+        font-weight: 600; }
+        .box_deash .right_side_infos .header form input[type=text]::-webkit-input-placeholder {
+          color: #999; }
+      .box_deash .right_side_infos .header .container_title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .box_deash .right_side_infos .header .container_title .title {
+          padding: 5px;
+          border-radius: 50px;
+          background-color: #eaeefc; }
+          .box_deash .right_side_infos .header .container_title .title h2 {
+            background-color: #2f7add;
+            color: #fff;
+            font-weight: 600;
+            font-size: 13px;
+            padding: 5px 30px;
+            border-radius: 50px; }
+      .box_deash .right_side_infos .header .container_pen {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .box_deash .right_side_infos .header .container_pen .pen {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative; }
+          .box_deash .right_side_infos .header .container_pen .pen i {
+            color: #fff;
+            z-index: 8;
+            pointer-events: none; }
+          .box_deash .right_side_infos .header .container_pen .pen input[type=color] {
+            border-radius: 50%;
+            width: 50px;
+            left: -7px;
+            top: -8px;
+            height: 55px;
+            cursor: pointer;
+            position: absolute; }
+    .box_deash .right_side_infos .body {
+      width: 100%;
+      display: grid;
+      height: 100%;
+      grid-template-columns: 1.5fr 2fr;
+      min-height: 100%; }
+      .box_deash .right_side_infos .body .container_manager {
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 1fr 80px; }
+        .box_deash .right_side_infos .body .container_manager .add_task {
+          width: 100%;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-top: solid 1px #e4e3e3;
+          border-right: solid 1px #e4e3e3; }
+          .box_deash .right_side_infos .body .container_manager .add_task a {
+            color: #fff;
+            background-color: #2f7add;
+            padding: 6px 30px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 50px; }
+        .box_deash .right_side_infos .body .container_manager .manager {
+          border-right: solid 1px #e4e3e3;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          overflow-y: scroll; }
+          .box_deash .right_side_infos .body .container_manager .manager .container_header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+            background-color: #fff; }
+            .box_deash .right_side_infos .body .container_manager .manager .container_header .line_side {
+              width: 3px;
+              height: 100%;
+              background-color: #2f7add; }
+            .box_deash .right_side_infos .body .container_manager .manager .container_header .header_manager {
+              width: 100%;
+              border-bottom: solid 1px #e4e3e3;
+              padding: 25px;
+              height: 80px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center; }
+              .box_deash .right_side_infos .body .container_manager .manager .container_header .header_manager h1 {
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #444;
+                font-size: 1.1em; }
+          .box_deash .right_side_infos .body .container_manager .manager ul {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center; }
+            .box_deash .right_side_infos .body .container_manager .manager ul li {
+              width: 100%;
+              border-bottom: solid 1px #e4e3e3; }
+              .box_deash .right_side_infos .body .container_manager .manager ul li a {
+                width: 100%;
+                padding: 30px 25px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: all linear .1s; }
+                .box_deash .right_side_infos .body .container_manager .manager ul li a .base_line_left {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center; }
+                  .box_deash .right_side_infos .body .container_manager .manager ul li a .base_line_left i {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    margin-right: 10px;
+                    color: #fff;
+                    background-color: #2f7add; }
+                  .box_deash .right_side_infos .body .container_manager .manager ul li a .base_line_left .information {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-items: flex-start; }
+                    .box_deash .right_side_infos .body .container_manager .manager ul li a .base_line_left .information h2 {
+                      font-size: 1em;
+                      color: #222;
+                      font-weight: 600; }
+                    .box_deash .right_side_infos .body .container_manager .manager ul li a .base_line_left .information small {
+                      font-weight: 600;
+                      color: #999;
+                      font-size: 12px; }
+                .box_deash .right_side_infos .body .container_manager .manager ul li a span {
+                  width: 40px;
+                  height: 40px;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  border-radius: 50%; }
+                .box_deash .right_side_infos .body .container_manager .manager ul li a:hover {
+                  background-color: #ebebeb; }
+      .box_deash .right_side_infos .body .task_screen {
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 1fr 80px; }
+        .box_deash .right_side_infos .body .task_screen .screen {
+          width: 100%;
+          height: 100%; }
+          .box_deash .right_side_infos .body .task_screen .screen .header_task {
+            width: 100%;
+            border-bottom: solid 1px #e4e3e3;
+            padding: 25px;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            .box_deash .right_side_infos .body .task_screen .screen .header_task .profile_info {
+              display: flex;
+              justify-items: flex-start;
+              align-items: center; }
+              .box_deash .right_side_infos .body .task_screen .screen .header_task .profile_info .photo {
+                width: 40px;
+                height: 40px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 50%;
+                margin-right: 10px; }
+              .box_deash .right_side_infos .body .task_screen .screen .header_task .profile_info h3 {
+                font-size: 14px;
+                font-weight: 600;
+                color: #222; }
+            .box_deash .right_side_infos .body .task_screen .screen .header_task ul {
+              display: flex;
+              justify-items: flex-end;
+              align-items: center; }
+              .box_deash .right_side_infos .body .task_screen .screen .header_task ul li a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                color: #2f7add;
+                border-radius: 50px;
+                margin: 0px 10px;
+                background-color: #eaeefc; }
+          .box_deash .right_side_infos .body .task_screen .screen .body_task_info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            padding: 35px; }
+            .box_deash .right_side_infos .body .task_screen .screen .body_task_info .special {
+              width: 10%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              margin-right: 10px; }
+              .box_deash .right_side_infos .body .task_screen .screen .body_task_info .special .only {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px !important;
+                height: 40px;
+                border-radius: 50px;
+                color: #fff;
+                background-color: #2f7add; }
+            .box_deash .right_side_infos .body .task_screen .screen .body_task_info .self_task {
+              width: 100%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              flex-direction: column; }
+              .box_deash .right_side_infos .body .task_screen .screen .body_task_info .self_task .task_header {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                margin-bottom: 25px; }
+                .box_deash .right_side_infos .body .task_screen .screen .body_task_info .self_task .task_header h1 {
+                  color: #222;
+                  font-weight: 600;
+                  font-size: 17px;
+                  margin-bottom: 10px; }
+                .box_deash .right_side_infos .body .task_screen .screen .body_task_info .self_task .task_header small {
+                  color: #a8a7a7;
+                  font-weight: 600; }
+                  .box_deash .right_side_infos .body .task_screen .screen .body_task_info .self_task .task_header small i {
+                    margin-right: 5px; }
+              .box_deash .right_side_infos .body .task_screen .screen .body_task_info .self_task p {
+                color: #999;
+                font-size: 14px;
+                line-height: 1.8em;
+                border-bottom: solid 1px #e4e3e3;
+                padding-bottom: 25px; }
+        .box_deash .right_side_infos .body .task_screen form {
+          border-top: solid 1px #e4e3e3;
+          background-color: #f4f4f4;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 80px 80px; }
+          .box_deash .right_side_infos .body .task_screen form input[type=text] {
+            background-color: #f4f4f4;
+            padding: 0px 35px;
+            font-weight: 600;
+            color: #222;
+            font-size: 1em; }
+          .box_deash .right_side_infos .body .task_screen form button {
+            color: #79838a;
+            font-size: 18px;
+            cursor: pointer;
+            border-left: solid 1px #e4e3e3; }
+
+.LoginScreen {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ebebeb; }
+  .LoginScreen .box_login {
+    width: 30%;
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 1px #1111111f;
+    border-radius: 5px; }
+    .LoginScreen .box_login .header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .LoginScreen .box_login .header span {
+        background-color: #1f88ce;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px; }
+      .LoginScreen .box_login .header h3 {
+        color: #999;
+        font-weight: 700; }
+    .LoginScreen .box_login form {
+      padding: 20px;
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .LoginScreen .box_login form .line_input {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .LoginScreen .box_login form .line_input .icon {
+          width: 45px;
+          background-color: #1f88ce;
+          color: #fff;
+          border-radius: 5px 0px 0px 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .LoginScreen .box_login form .line_input .icon, .LoginScreen .box_login form .line_input input {
+          padding: 6px;
+          height: 40px; }
+        .LoginScreen .box_login form .line_input input {
+          width: 100%;
+          background-color: #fff;
+          border-radius: 0px 5px 5px 0px;
+          border: solid 1px #1f88ce; }
+      .LoginScreen .box_login form input[type=submit] {
+        background-color: #1f88ce;
+        color: #fff;
+        padding: 6px 24px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer; }
+  .LoginScreen small {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #999; }
+
+/*# sourceMappingURL=index.css.map */

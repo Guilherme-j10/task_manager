@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$background_interface: #fff;
+$border_line_color: #e4e3e3;
+$button_bg_color: #eaeefc;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-weight: normal;
+    box-sizing: border-box;
+    outline: none;
+
+    body{
+        img{
+            max-width: 100%;
+        }
+    }
+
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
+//IMPORTS
+@import 'pages/homeScreen/home.scss';
+@import 'pages/loginScreen/login.scss';
